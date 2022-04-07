@@ -1,4 +1,4 @@
-let socket = new WebSocket('ws://'+ (window.location.href.slice(window.location.protocol.length+2)))
+let socket = new WebSocket('wss://'+ (window.location.href.slice(window.location.protocol.length+2)))
 
 socket.onopen = (event) => {
     socket.send('new')
