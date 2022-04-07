@@ -4,7 +4,7 @@ let expressWs = require('express-ws')(app);
 let bcrypt = require('bcrypt');
 let bP = require('body-parser');
 
-let port = 5000
+let port = 80
 let users = [],
 data = {};
 app.use(express.static('public'))
@@ -35,5 +35,5 @@ app.ws('/', function(ws, req) {
 })
 
 app.listen(port, () => {
-    console.log('App listening on http://localhost:5000')
+    console.log('App listening on http://localhost:80')
 })
